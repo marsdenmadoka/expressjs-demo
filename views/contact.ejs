@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+<h1>CONTACT US!</h1>
+            <% include partials/nav.ejs %>  <!--partial views-->
+            <p>contact the coolest cats on the web</p>
+<form id="contact-form">
+    <form id="contact-form" method="POST" action="/contact"> <!-- it going to make apost to that URL that conatct page-->
+    <label for="who">who do you want to contact</label>
+    <input type="text" name="who"  value="<%=qs.person %>">
+    <label for="department">which department?</label>
+    <input type="text" name="department" value="<%=qs.dept %>">
+    <label for="email">Your email</label>
+    <input type="email" name="email"/>
+    <input type="submit" value="sumit"/>
+
+</form>
+    </body>
+</html>
